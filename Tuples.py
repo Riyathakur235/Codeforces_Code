@@ -30,5 +30,15 @@
 # t=(1,2,4)+(3,5,6)
 # print(t)
 
-t=(("satish ")*4)
-print(t)
+# t=(("satish ")*4)
+# print(t)
+
+# t=(1,2,3,1,4,4,6,7,1)
+# t.count(1)
+# print(t.index(3))
+# print(len(t))
+
+# new_t=sorted(t)
+# print(new_t)
+# print(max(t))
+# print(min(t))
