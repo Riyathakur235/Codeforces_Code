@@ -1,22 +1,20 @@
 N=int(input())
+nums = list(map(int, input().split()))
+
 even = odd = positive = negative = 0
 
-for i in range(N):
-    num = int(input())
-    
-    # even / odd
+for num in nums:
     if num % 2 == 0:
         even += 1
     else:
         odd += 1
-    
-    # positive / negative
+
     if num > 0:
         positive += 1
     elif num < 0:
         negative += 1
 
-print("Even:", even)
-print("Odd:", odd)
-print("Positive:", positive)
-print("Negative:", negative)
+print(even, "even")
+print(odd, "odd")
+print(positive, "positive")
+print(negative, "negative")
