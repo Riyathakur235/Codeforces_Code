@@ -14,7 +14,7 @@ for num in nums:
     elif num < 0:
         negative += 1
 
-print(even, "even")
-print(odd, "odd")
-print(positive, "positive")
-print(negative, "negative")
+print("Even: ",even)
+print("Odd: ",odd)
+print("Positive: ",positive)
+print("Negative: ",negative)
