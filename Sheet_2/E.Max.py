@@ -1,4 +1,3 @@
 N=int(input())
-a,b,c,d,e=map(int,input().split())
-max_val=max(a,b,c,d,e)
-print(max_val)
+x=list(map(int,input().split()))
+print(max(x))
