@@ -1,9 +1,11 @@
-N=int(input().strip())
-T=int(input())
-for _ in range(T):
- while N>0:
-   print(N%10,end=' ')
-   N//=10
-print()
+T = int(input())
 
+for _ in range(T):
+    N = input().strip()
+    
+    # Reverse string
+    rev = N[::-1]
+    
+    # Print with space between digits
+    print(" ".join(rev))            
             
