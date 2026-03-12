@@ -44,6 +44,7 @@ function showDetails(recipe) {
 
 closeBtn.onclick = () => modal.style.display = "none";
 
+
 // Search Function
 searchInput.addEventListener("input", () => {
     const value = searchInput.value.toLowerCase();
@@ -53,4 +54,16 @@ searchInput.addEventListener("input", () => {
     displayRecipes(filtered);
 });
 
+
+// Sort Ascending
+function sortAscending() {
+    const sorted = [...recipesData].sort((a, b) => a.rating - b.rating);
+    displayRecipes(sorted);
+}
+
+// Sort Descending
+function sortDescending() {
+    const sorted = [...recipesData].sort((a, b) => b.rating - a.rating);
+    displayRecipes(sorted);
+}
 fetchRecipes();
