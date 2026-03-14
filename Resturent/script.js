@@ -66,4 +66,5 @@ function sortDescending() {
     const sorted = [...recipesData].sort((a, b) => b.rating - a.rating);
     displayRecipes(sorted);
 }
+
 fetchRecipes();
