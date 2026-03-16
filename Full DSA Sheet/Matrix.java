@@ -36,6 +36,17 @@
 //         matrix2.add(row32);
 //         System.out.println(matrix2);
 
+//prefix sum of array     
+///int arr[]={2,4,6,8,10};
+//        int preffix[]= new int[arr.length];
+//        preffix[0]=arr[0];
+//        for(int i=1;i<arr.length;i++){
+//            preffix[i]=arr[i]+preffix[i-1];
+//        }
+//        for(int j=0;j<arr.length;j++){
+//            System.out.print(preffix[j]+" ");
+//        }
+
 
 //     }     
 // }
