@@ -63,6 +63,15 @@ public class Linkedlist {
            curr=next;
        }
     }
+    void middle(){
+        Node slow=head;
+        Node fast=head;
+        while (slow.next!=null && fast.next!=null) {
+            slow=slow.next;
+            fast=fast.next.next;
+        }
+        System.out.println(slow.data);
+    }
     public static void main(String[] args) {
        Linkedlist list = new Linkedlist();
        list.insert(1);
@@ -70,11 +79,13 @@ public class Linkedlist {
        list.insert(3);
        list.print();
        list.insertadd(4);
-    //    list.print();
+       list.print();
     //    list.delete();
     //    list.deletend();
     //    list.print();
           list.reverse();
-          list.print();   
+          list.print(); 
+          list.middle();
+          list.print();  
     }
 }
