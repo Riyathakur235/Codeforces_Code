@@ -27,12 +27,40 @@ public class Linkedlist {
          }
          temp.next=newnode;
      }
+     void print(){
+        Node temp=head;
+        while(temp!=null){
+            System.out.print(temp.data+" ");
+            temp=temp.next;
+        }
+         System.out.println("null");
+     }
+     void delete(){
+        if(head==null){
+            return;
+        }
+        head =head.next;
+    }
+    void deletend(){
+        while(head==null || head.next==null){
+            head=null;
+            return;
+        }
+        Node temp=head;
+        while (temp.next.next!=null){
+            temp=temp.next.next;
+        }
+        temp.next=null;
+    }
     public static void main(String[] args) {
        Linkedlist list = new Linkedlist();
        list.insert(1);
        list.insert(2);
        list.insert(3);
+       list.print();
        list.insertadd(4);
+       list.print();
+       list.delete();
 
     }
 }
