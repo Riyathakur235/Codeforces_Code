@@ -11,7 +11,7 @@ public class Linkedlist {
     //insert data
      void insert(int data){
         Node newnode=new Node(data);
-        newnode.data=data;
+        newnode.next=head;
         head =newnode;
      }
      //to add new node
@@ -61,6 +61,8 @@ public class Linkedlist {
        list.insertadd(4);
        list.print();
        list.delete();
+       list.deletend();
+       list.print();
 
     }
 }
