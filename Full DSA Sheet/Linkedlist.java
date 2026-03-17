@@ -52,6 +52,17 @@ public class Linkedlist {
         }
         temp.next=null;
     }
+    //reverse the linkedlist
+      void reverse(){
+        Node curr=head;
+        Node prev=null;
+       while(curr!=null){
+           Node next =curr.next;
+           curr.next=prev;
+           prev=curr;
+           curr=next;
+       }
+    }
     public static void main(String[] args) {
        Linkedlist list = new Linkedlist();
        list.insert(1);
@@ -59,10 +70,11 @@ public class Linkedlist {
        list.insert(3);
        list.print();
        list.insertadd(4);
-       list.print();
-       list.delete();
-       list.deletend();
-       list.print();
-
+    //    list.print();
+    //    list.delete();
+    //    list.deletend();
+    //    list.print();
+          list.reverse();
+          list.print();   
     }
 }
