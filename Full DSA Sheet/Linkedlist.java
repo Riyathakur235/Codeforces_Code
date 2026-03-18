@@ -63,6 +63,7 @@ public class Linkedlist {
            curr=next;
        }
     }
+    //mid find
     void middle(){
         Node slow=head;
         Node fast=head;
@@ -71,6 +72,19 @@ public class Linkedlist {
             fast=fast.next.next;
         }
         System.out.println(slow.data);
+    }
+    //cycle find
+    void cycle(){
+        Node slow =head;
+        Node fast=head;
+        while(fast!=null && fast.next!=null){
+            slow=slow.next;
+            fast=fast.next.next;
+            if(fast==slow){
+                System.out.println("Has Cycle");
+            }
+        }
+        System.out.println("No Cycle");
     }
     public static void main(String[] args) {
        Linkedlist list = new Linkedlist();
@@ -87,5 +101,6 @@ public class Linkedlist {
           list.print(); 
           list.middle();
           list.print();  
+          list.cycle();
     }
 }
