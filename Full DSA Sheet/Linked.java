@@ -22,6 +22,7 @@ public class Linked {
         }
          System.out.println("null");
      }
+     
     
     public static void main(String[] args) {
         Linked list1 =new Linked();
