@@ -66,7 +66,7 @@ public class Qqueue {
         q.add(4);
         q.display();
         int k=3;
-       q.reversek(q,k);
+      // q.reversek(q,k);
        q.display();
 }
 }
