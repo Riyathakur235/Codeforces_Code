@@ -25,5 +25,21 @@ class Reward{
        } else {
            System.out.println("NO");
        }
+
+
+    //    int arr[] = {10, 29, 48, 57, 74, 29, 48};
+    //     int count = 0;
+    //     int duplicate = arr[0];
+    //     for (int i = 0; i < arr.length; i++) {
+    //         if (duplicate == arr[i]) {
+    //             count++;
+    //         } else {
+    //             i++;
+    //         }
+    //         System.out.println(arr[i]);
+    //        // System.out.println(count);
+    //     }
+    //     System.out.println(arr);
+    //     System.out.println(count);
    }
 }
