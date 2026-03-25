@@ -26,7 +26,7 @@ class Reward{
            System.out.println("NO");
        }
 
-
+         //duplicate element in array
     //    int arr[] = {10, 29, 48, 57, 74, 29, 48};
     //     int count = 0;
     //     int duplicate = arr[0];
