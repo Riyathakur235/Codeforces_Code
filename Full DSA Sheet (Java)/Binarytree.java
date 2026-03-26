@@ -37,6 +37,22 @@ class Node {
                 postorder(node.right);
                 System.out.println(node.data + "");
             }
+            int height(Node root){
+               if(root==null) return 0;
+               int leftheight=height(root.left);
+               int rightheight =height(root.right);
+               return Math.max(leftheight,rightheight)+1;
+            }
+            int countNodes(Node root){
+                if (root==null) return 0;
+                return 1+countNodes(root.left)+countNodes(root.right);
+            }
+            boolean bst(Node node,int max,int min){
+                if(root==null) return true;
+                if(node.data>=max || node.data<=min) return false;
+                return bst(node.left,min,node.data) &&
+                        bst(node.right,max,node.data);
+            }
 
             public static void main(int[] args) {
                 Binarytree tree = new Binarytree();
@@ -50,7 +66,12 @@ class Node {
                 tree.preorder(tree.root);
                 System.out.println();
                 tree.postorder(tree.root);
+
+                System.out.println("height= "+tree.height(tree.root));
+                System.out.println("Count= "+tree.countNodes(tree.root));
+                System.out.println(tree.bst(tree.root,Integer.MIN_VALUE,Integer.MAX_VALUE));
             }
-        }
+ }
+        
 
 
