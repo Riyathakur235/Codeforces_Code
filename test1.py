@@ -117,9 +117,13 @@
  #number is a spy number
  #first repeating no. in string
  
-def last_digit(a,b):
-  return (a,b,10)
-N=int(input().split())
-for i in range(N):
-  a,b = map(int,input.split())
-  print(last_digit(a,b))  
+# def last_digit(a,b):
+#   return (a,b,10)
+# N=int(input().split())
+# for i in range(N):
+#   a,b = map(int,input.split())
+#   print(last_digit(a,b))  
+
+
+
+
