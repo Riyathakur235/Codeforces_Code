@@ -23,7 +23,28 @@ public class GraphQues {
         int v=5;
         ArrayList<ArrayList<Integer>> adj=new ArrayList<>();
         for(int i=0;i<v;i++){
-            
+             adj.add(new ArrayList<>());
+        }
+
+        // Add edges (Undirected Graph example)
+        adj.get(0).add(1);
+        adj.get(0).add(2);
+
+        adj.get(1).add(0);
+        adj.get(1).add(3);
+
+        adj.get(2).add(0);
+        adj.get(2).add(4);
+
+        adj.get(3).add(1);
+        adj.get(4).add(2);
+
+        //  Visited array
+        boolean[] visited = new boolean[v];
+
+        // Call BFS
+        System.out.println("BFS Traversal:");
+        bfs(0, adj, visited);
         }
     }
-}
+
