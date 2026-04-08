@@ -1,45 +1,44 @@
 class Reward{
     import java.util.*;
 //
-   public static void main(String[] args) {
-       Scanner sc = new Scanner(System.in);
+//    public static void main(String[] args) {
+//        Scanner sc = new Scanner(System.in);
 
-       int a1 = sc.nextInt();
-       int a2 = sc.nextInt();
-       int a3 = sc.nextInt();
+//        int a1 = sc.nextInt();
+//        int a2 = sc.nextInt();
+//        int a3 = sc.nextInt();
 
-       int b1 = sc.nextInt();
-       int b2 = sc.nextInt();
-       int b3 = sc.nextInt();
+//        int b1 = sc.nextInt();
+//        int b2 = sc.nextInt();
+//        int b3 = sc.nextInt();
 
-       int n = sc.nextInt();
+//        int n = sc.nextInt();
 
-       int totalCups = a1 + a2 + a3;
-       int totalMedals = b1 + b2 + b3;
+//        int totalCups = a1 + a2 + a3;
+//        int totalMedals = b1 + b2 + b3;
 
-       int shelvesForCups = (totalCups + 4) / 5;
-       int shelvesForMedals = (totalMedals + 9) / 10;
+//        int shelvesForCups = (totalCups + 4) / 5;
+//        int shelvesForMedals = (totalMedals + 9) / 10;
 
-       if (shelvesForCups + shelvesForMedals <= n) {
-           System.out.println("YES");
-       } else {
-           System.out.println("NO");
-       }
+//        if (shelvesForCups + shelvesForMedals <= n) {
+//            System.out.println("YES");
+//        } else {
+//            System.out.println("NO");
+//        }
 
          //duplicate element in array
-    //    int arr[] = {10, 29, 48, 57, 74, 29, 48};
-    //     int count = 0;
-    //     int duplicate = arr[0];
-    //     for (int i = 0; i < arr.length; i++) {
-    //         if (duplicate == arr[i]) {
-    //             count++;
-    //         } else {
-    //             i++;
-    //         }
-    //         System.out.println(arr[i]);
-    //        // System.out.println(count);
-    //     }
-    //     System.out.println(arr);
-    //     System.out.println(count);
+       int arr[] = {10, 29, 48, 57, 74, 29, 48};
+        int count = 0;
+        int duplicate = arr[0];
+        for (int i = 0; i < arr.length; i++) {
+            if (duplicate == arr[i]) {
+                count++;
+            } else {
+                i++;
+            }
+            System.out.println(arr[i]);
+           // System.out.println(count);
+        }
+        System.out.println(arr);
+        System.out.println(count);
    }
-}
