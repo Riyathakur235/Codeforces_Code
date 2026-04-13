@@ -1,10 +1,10 @@
 
-# def find_xy(N):
-#     for X in range(N):
-#         for Y in range(N):
-#             if (X**2 + Y**2) % N == 0:
-#                 return X, Y
-#     return None
+def find_xy(N):
+    for X in range(N):
+        for Y in range(N):
+            if (X**2 + Y**2) % N == 0:
+                return X, Y
+    return None
 
 # N = int(input().strip())
 # result = find_xy(N)
